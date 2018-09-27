@@ -1,0 +1,32 @@
+{
+    "manifestVersion": 1,
+    "id": "azdo-azure-search",
+    "publisher": "",
+    "version": "1.0.0",
+    "name": "Deploy Azure Search",
+    "description": "Set of tasks to assist deployments of Azure Search",
+    "public": false,
+    "categories": ["Build and release"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "task-create-datasource",
+            "type": "ms.vss-web.hub",
+            "targets": [
+                "ms.vss-build-web.build-release-hub-group"
+            ],
+            "properties": {
+                "name": "CreateDatasource"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "CreateDatasource"
+        }
+    ]
+}

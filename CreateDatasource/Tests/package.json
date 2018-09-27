@@ -1,0 +1,23 @@
+{
+  "name": "azdo-azure-search-create-datasource-tests",
+  "version": "1.0.0",
+  "description": "Azure Pipelines Azure Search Create Datasource Tests",
+  "main": "run-tests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mikaelsnavy/azdo-azure-search.git"
+  },
+  "author": "Mikael Stadden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikaelsnavy/azdo-azure-search/issues"
+  },
+  "homepage": "https://github.com/mikaelsnavy/azdo-azure-search#readme",
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "mocha": "^5.2.0"
+  }
+}

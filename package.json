@@ -1,0 +1,28 @@
+{
+  "name": "azdo-azure-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create-datasource.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mikaelsnavy/azdo-azure-search.git"
+  },
+  "keywords": [],
+  "author": "Mikael Stadden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikaelsnavy/azdo-azure-search/issues"
+  },
+  "homepage": "https://github.com/mikaelsnavy/azdo-azure-search#readme",
+  "dependencies": {
+    "@types/node": "^10.11.1",
+    "jsonfile": "^5.0.0",
+    "node-rest-client": "^3.1.0",
+    "typed-rest-client": "^1.0.9",
+    "vss-web-extension-sdk": "^5.140.0",
+    "vsts-task-lib": "^2.6.1"
+  }
+}
