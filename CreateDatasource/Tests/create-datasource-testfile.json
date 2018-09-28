@@ -1,6 +1,0 @@
-{
-    "name": "blob-test-datasource",
-    "type": "azureblob",
-    "credentials": { "connectionString": "<Test Connection String>" },
-    "container": { "name": "blob" }
-  }

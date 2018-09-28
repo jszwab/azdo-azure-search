@@ -1,27 +1,17 @@
 {
-  "name": "azdo-azure-search",
-  "version": "1.0.0",
-  "description": "",
-  "main": "create-datasource.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "npm run clean  && npm run compile  && tfx extension create  --rev-version",
+    "gallery-publish": "tfx extension publish --rev-version",
+    "clean": "rimraf ./*.vsix && rimraf CreateDatasource/node_modules/typed-rest-client/index.d.ts",
+    "compile": "tsc -p .",
+    "install-task-lib": "cd CreateDatasource && npm install --save-dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/mikaelsnavy/azdo-azure-search.git"
+  "devDependencies": {
+    "@types/node": "^8.0.7",
+    "tfx-cli": "^0.4.5",
+    "typescript": "2.3.4"
   },
-  "keywords": [],
-  "author": "Mikael Stadden",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mikaelsnavy/azdo-azure-search/issues"
-  },
-  "homepage": "https://github.com/mikaelsnavy/azdo-azure-search#readme",
-  "dependencies": {
-    "@types/node": "^10.11.1",
-    "jsonfile": "^5.0.0",
-    "typed-rest-client": "^1.0.9",
-    "vss-web-extension-sdk": "^5.140.0",
-    "vsts-task-lib": "^2.6.1"
-  }
+  "name": "vstsexttask",
+  "private": true,
+  "version": "0.0.1"
 }

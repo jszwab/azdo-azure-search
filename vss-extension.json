@@ -1,32 +1,79 @@
 {
-    "manifestVersion": 1,
-    "id": "azdo-azure-search",
-    "publisher": "",
-    "version": "1.0.0",
-    "name": "Deploy Azure Search",
-    "description": "Set of tasks to assist deployments of Azure Search",
-    "public": false,
-    "categories": ["Build and release"],
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
-    ],
-    "contributions": [
-        {
-            "id": "task-create-datasource",
-            "type": "ms.vss-web.hub",
-            "targets": [
-                "ms.vss-build-web.build-release-hub-group"
-            ],
-            "properties": {
-                "name": "CreateDatasource"
-            }
-        }
-    ],
-    "files": [
-        {
-            "path": "CreateDatasource"
-        }
-    ]
+  "manifestVersion": 1,
+  "id": "azdo-azure-search",
+  "version": "0.1.3",
+  "name": "Azure Search Release Tasks",
+  "scopes": [],
+  "description": "Tools to help deploy Azure Search objects as part of your release",
+  "publisher": "mikaelsnavy",
+  "public": false,
+  "galleryFlags": [
+    "Preview"
+  ],
+  "icons": {
+    "default": "static/images/logo.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "demands": [
+    "api-version/3.0"
+  ],
+  "tags": [
+    "Sample"
+  ],
+  "categories": [
+    "Build and release"
+  ],
+  "screenshots": [
+    {
+      "path": "static/images/screen1.png"
+    }
+  ],
+  "content": {
+    "license": {
+      "path": "license.md"
+    },
+    "details": {
+      "path": "overview.md"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "https://bit.ly"
+    },
+    "support": {
+      "uri": "https://bit.ly"
+    },
+    "issues": {
+      "uri": "https://bit.ly"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://bit.ly"
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "files": [
+    {
+      "path": "CreateDatasource"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "CreateDatasource",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "type": "ms.vss-distributed-task.task",
+      "properties": {
+        "name": "CreateDatasource"
+      }
+    }
+  ]
 }

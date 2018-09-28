@@ -1,38 +1,19 @@
 {
-    "id": "57ee7959-ba10-47a7-8adb-19d032873133",
-    "name": "CreateDatasource",
-    "friendlyName": "Create an Azure Search datasrouce",
-    "description": "#TODO",
-    "helpMarkDown": "#TODO",
-    "category": "Utility",
-    "visibility": [
-      "Build",
-      "Release"
-    ],
-    "author": "Mikael Stadden",
-    "version": {
+   "id": "8c9db9e8-4737-4cca-8afc-8db2632bc0c0",
+   "name": "CreateDatasource",
+   "friendlyName": "Create Azure Search Datasource",
+   "description": "Deploys Azure Search Datasources from a JSON definition",
+   "helpMarkDown": "[More Information](https://url.to/yourmarkdown)",
+   "category": "Deploy",
+   "visibility": ["Release"],
+   "author": "Mikael Stadden",
+   "version": {
       "Major": 1,
       "Minor": 0,
       "Patch": 0
-    },
-    "demands": [
-    ],
-    "groups": [
-      {
-        "name": "advanced",
-        "displayName": "Advanced",
-        "isExpanded": false
-      }
-    ],  
-    "inputs": [
-      {
-        "name": "ApiKey",
-        "type": "string",
-        "label": "API Key",
-        "defaultValue": "",
-        "required": true,
-        "helpMarkDown": "Azure Search API Key that is used to create objects in Azure Search"
-      },
+   },
+   "demands": [],
+   "inputs": [
       {
         "name": "SearchServiceName",
         "type": "string",
@@ -40,6 +21,14 @@
         "defaultValue": "",
         "helpMarkDown": "Name of your Azure Search Service",
         "required": true
+      },
+      {
+        "name": "ApiKey",
+        "type": "string",
+        "label": "API Key",
+        "defaultValue": "",
+        "required": true,
+        "helpMarkDown": "Azure Search API Key that is used to create objects in Azure Search"
       },
       {
         "name": "SearchServiceApiVersion",
@@ -50,11 +39,11 @@
         "required": true
       },
       {
-        "name": "DatasourceJsonPath",
-        "type": "string",
-        "label": "Datasource JSON File Path",
-        "defaultValue": "",
-        "helpMarkDown": "Path to the JSON file that defines your Azure Search Datasource",
+         "name": "DatasourceJsonPath",
+         "type": "filePath",
+         "label": "Datasource JSON File Path",
+         "defaultValue": "",
+         "helpMarkDown": "Path to the JSON file that defines your Azure Search Datasource",
         "required": true
       },
       {
@@ -65,12 +54,9 @@
         "helpMarkDown": "If set, will delete an existing Azure Search datasource of the same name before creating the specified datasource.",
         "required": false
       }
-    ],
-    "instanceNameFormat": "Create Azure Search Datasource",
-    "execution": {
-      "node": {
-        "target": "create-datasource.js",
-        "argumentFormat": ""
-      }
-    }
-  }
+   ],
+   "instanceNameFormat": "CreateDatasource",
+   "execution":
+    {"Node":{"target":"CreateDatasource.js"}}
+   
+}
