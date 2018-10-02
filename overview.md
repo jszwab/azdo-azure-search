@@ -1,32 +1,28 @@
-## Azure Search Release Tasks ##
+# Create Azure Search Objects #
 
-Tools to help deploy Azure Search objects as part of your release
+Use Azure Search Release Tasks to to help deploy Azure Search objects in your release pipelines. This enables definition and deployment of search objects in code.
+Azure Search datasources, indexes, and indexers cannot be deployed via ARM templates so this will work in the meantime. 😄
 
-### Quick steps to get started ###
-
-![](/static/images/Screen1.png)
+## Quick steps to get started ##
 
 //TODO:Add a walk-through of key features to your extension. See [Roll-up Board](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) for an example.
 
-### Known issue(s)
+## Known issue(s) ##
 
 - None
 
-### Learn More
+## Learn More ##
 
-The [source](//TODO:Point to your repo or remove this) to this extension is available. Feel free to take, fork, and extend.
+The [source](https://github.com/mikaelsnavy/azdo-azure-search) to this extension is available. Feel free to take, fork, and extend.
 
-//TODO:Update the 3rd party notices file or remove the view notices reference.
-[View Notices](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/mikaelsnavy/extension/azdo-azure-search2/latest/assetbyname/ThirdPartyNotices.txt) for third party software included in this extension.
+[View Notices](https://github.com/mikaelsnavy/azdo-azure-search/blob/master/ThirdPartyNotices.txt) for third party software included in this extension.
 
-### Minimum supported environments ###
+## Minimum supported environments ##
 
-- Visual Studio Team Services
+- Azure DevOps
+- TFS 2017 & 2018
 
-### Contributors ###
+## Feedback ##
 
-We thank the following contributor(s) for this extension: @TODO@-Add and credit contributors.
-
-### Feedback ###
 - Add a review below.
-- Send us an [email](mailto://TODO:Add your email address).
+- Send me an [email](mailto://mikaelsnavy@gmail.com)!

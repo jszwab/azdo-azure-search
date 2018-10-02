@@ -5,6 +5,6 @@
     },
     "exclude": [
     "node_modules",
-    "CreateDatasource/node_modules"
+    "Create/node_modules"
   ]
 }

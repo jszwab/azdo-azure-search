@@ -1,10 +1,10 @@
 {
   "manifestVersion": 1,
   "id": "azdo-azure-search",
-  "version": "0.1.3",
-  "name": "Azure Search Release Tasks",
+  "version": "0.1.11",
+  "name": "Create Azure Search Objects",
   "scopes": [],
-  "description": "Tools to help deploy Azure Search objects as part of your release",
+  "description": "Use Create Azure Search Objects to to help deploy Azure Search objects in your release pipelines. This enables definition and deployment of search objects in code.",
   "publisher": "mikaelsnavy",
   "public": false,
   "galleryFlags": [
@@ -22,15 +22,11 @@
     "api-version/3.0"
   ],
   "tags": [
-    "Sample"
+    "search",
+    "azure search"
   ],
   "categories": [
     "Build and release"
-  ],
-  "screenshots": [
-    {
-      "path": "static/images/screen1.png"
-    }
   ],
   "content": {
     "license": {
@@ -41,38 +37,28 @@
     }
   },
   "links": {
-    "getstarted": {
-      "uri": "https://bit.ly"
-    },
-    "support": {
-      "uri": "https://bit.ly"
-    },
     "issues": {
-      "uri": "https://bit.ly"
+      "uri": "https://github.com/mikaelsnavy/azdo-azure-search/issues"
     }
   },
   "repository": {
     "type": "git",
-    "uri": "https://bit.ly"
-  },
-  "branding": {
-    "color": "rgb(220, 235, 252)",
-    "theme": "light"
+    "uri": "https://github.com/mikaelsnavy/azdo-azure-search"
   },
   "files": [
     {
-      "path": "CreateDatasource"
+      "path": "Create"
     }
   ],
   "contributions": [
     {
-      "id": "CreateDatasource",
+      "id": "Create",
       "targets": [
         "ms.vss-distributed-task.tasks"
       ],
       "type": "ms.vss-distributed-task.task",
       "properties": {
-        "name": "CreateDatasource"
+        "name": "Create"
       }
     }
   ]

@@ -1,6 +1,6 @@
 Azure Search Release Tasks
 
-Copyright (c) //TODO:Add owners name
+Copyright (c) // Mikael Stadden
 
 All rights reserved.
 
