@@ -1,12 +1,12 @@
 {
   "manifestVersion": 1,
   "id": "azdo-azure-search",
-  "version": "0.1.11",
+  "version": "1.1.2",
   "name": "Create Azure Search Objects",
   "scopes": [],
   "description": "Use Create Azure Search Objects to to help deploy Azure Search objects in your release pipelines. This enables definition and deployment of search objects in code.",
   "publisher": "mikaelsnavy",
-  "public": false,
+  "public": true,
   "galleryFlags": [
     "Preview"
   ],
@@ -27,6 +27,11 @@
   ],
   "categories": [
     "Build and release"
+  ],
+  "screenshots": [
+    {
+      "path": "static/images/screen1.png"
+    }
   ],
   "content": {
     "license": {

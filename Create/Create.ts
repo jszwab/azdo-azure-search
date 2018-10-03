@@ -61,8 +61,7 @@ async function run() {
             // #TODO - make this compare more forgiving
             // If the object is the same do nothing
             if (getres.result === jsonData) {
-                tl.debug("Object currently in Azure Search same as input. Not modifying.");
-                tl.setResult(tl.TaskResult.Succeeded, tl.loc('Create'));
+                tl.setResult(tl.TaskResult.Succeeded, "Object currently in Azure Search same as input. Not modifying.");
                 return;
             }
 
@@ -70,6 +69,8 @@ async function run() {
             if (getres.statusCode === 200 && overwriteExistingObject)
             {
                 // Delete object if it exists
+                console.log("Object currently found in Azure Search. Deleting by user request.");
+                tl.debug("Object currently found in Azure Search. Deleting by user request.");
                 let delres: rm.IRestResponse<object> = await rest.del<object>(`/${apiBaseAction}/${objectName}?api-version=${searchServiceApiVersion}`, requestOptions);
                 
                 // If we can't delete, we have a problem 😢
@@ -93,16 +94,21 @@ async function run() {
         //-------------------------------------------------------------
         // Create object! 😃
         //-------------------------------------------------------------
+        tl.debug(`Deploying ${searchServiceObject} ${objectName}...`);
+        console.log(`Deploying ${searchServiceObject} ${objectName}...`);
+
         let createget: rm.IRestResponse<object> = await rest.create<object>(`/${apiBaseAction}?api-version=${searchServiceApiVersion}`, jsonData, requestOptions);
         if (createget.statusCode !== 201)
         {
             throw new Error(`Cannot create ${objectName}. HTTP code: ${createget.statusCode}. HTTP response: ${createget.result}.`);
         }
 
-        tl.setResult(tl.TaskResult.Succeeded, tl.loc('Create'));
+        tl.setResult(tl.TaskResult.Succeeded, "Create successful!");
     }
     catch (err) {
-        tl.setResult(tl.TaskResult.Failed, err);
+        tl.debug(err.message);
+        tl.error(err);
+        tl.setResult(tl.TaskResult.Failed, err.message);
     }
     finally {
         // #TODO - Publish telemetry

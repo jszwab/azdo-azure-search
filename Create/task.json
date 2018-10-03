@@ -1,9 +1,9 @@
 {
    "id": "8c9db9e8-4737-4cca-8afc-8db2632bc0c0",
-   "name": "Azure Search: Create Object",
-   "friendlyName": "Create an Azure Search Object",
+   "name": "Create",
+   "friendlyName": "Create Azure Search Object",
    "description": "Deploys Azure Search Datasource, Index, or Indexer from a JSON definition",
-   "helpMarkDown": "[More Information](https://url.to/yourmarkdown)",
+   "helpMarkDown": "[More Information](https://github.com/mikaelsnavy/azdo-azure-search/blob/master/overview.md)",
    "category": "Deploy",
    "visibility": ["Release"],
    "author": "Mikael Stadden",

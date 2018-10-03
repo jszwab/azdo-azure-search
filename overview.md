@@ -5,11 +5,17 @@ Azure Search datasources, indexes, and indexers cannot be deployed via ARM templ
 
 ## Quick steps to get started ##
 
-//TODO:Add a walk-through of key features to your extension. See [Roll-up Board](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.RollUpBoard) for an example.
+1. Create a new Azure DevOps or TFS Release pipeline.
+2. Setup an artifact which contains the JSON definition files you want to deploy.
+3. Add a "Create Azure Search Object" task to your release pipeline.
+4. Add in your Azure Search service name and API key so Azure DevOps can connect to your Azure Search service.
+5. Choose your API Version or leave the default (newest version).
+6. Choose your object type to deploy.
+7. Lastly, choose your JSON file from your artifact to deploy.
 
 ## Known issue(s) ##
 
-- None
+- Error reporting for things like invalid API key haven't been refined.
 
 ## Learn More ##
 

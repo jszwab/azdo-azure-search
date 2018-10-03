@@ -2,9 +2,9 @@
   "scripts": {
     "package": "npm run clean  && npm run compile  && tfx extension create  --rev-version",
     "gallery-publish": "tfx extension publish --rev-version",
-    "clean": "rimraf ./*.vsix && rimraf CreateAzureSearchDatasource/node_modules/typed-rest-client/index.d.ts",
+    "clean": "rimraf ./*.vsix && rimraf Create/node_modules/typed-rest-client/index.d.ts",
     "compile": "tsc -p .",
-    "install-task-lib": "cd CreateAzureSearchDatasource && npm install --save-dev"
+    "install-task-lib": "cd Create && npm install --save-dev"
   },
   "devDependencies": {
     "@types/node": "^8.0.7",

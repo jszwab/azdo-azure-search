@@ -1,6 +1,4 @@
-Datasource/*.js
-Index/*.js
-Indexer/*.js
+Create/*.js
 
 node_modules
 .vscode
