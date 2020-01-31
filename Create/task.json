@@ -34,7 +34,7 @@
         "name": "SearchServiceApiVersion",
         "type": "pickList",
         "label": "Search Service API Version",
-        "defaultValue": "2017-11-11-Preview",
+        "defaultValue": "2019-05-06",
         "helpMarkDown": "API Version of Azure Search to use when creating your object",
         "required": true,
         "options": {
