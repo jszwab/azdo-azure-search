@@ -5,7 +5,7 @@
   "name": "Create Azure Search Objects",
   "scopes": [],
   "description": "Use Create Azure Search Objects to to help deploy Azure Search objects in your release pipelines. This enables definition and deployment of search objects in code.",
-  "publisher": "mikaelsnavy",
+  "publisher": "jszwab",
   "public": true,
   "galleryFlags": [
     "Preview"
@@ -43,12 +43,12 @@
   },
   "links": {
     "issues": {
-      "uri": "https://github.com/mikaelsnavy/azdo-azure-search/issues"
+      "uri": "https://github.com/jszwab/azdo-azure-searchh/issues"
     }
   },
   "repository": {
     "type": "git",
-    "uri": "https://github.com/mikaelsnavy/azdo-azure-search"
+    "uri": "https://github.com/jszwab/azdo-azure-search"
   },
   "files": [
     {
